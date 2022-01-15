@@ -10,6 +10,62 @@
     <title>Home</title>
 </head>
 <body>
+    <nav class="navbar navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white-50" href="#"><h1 style="display: inline; position: relative;font-size: xx-large;">Design</h1></a>
+          <div class="navbar d-none d-md-inline-flex">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white-50" href="#second-sec">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </div>
+          <button class="navbar-toggler d-md-none bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-dark text-white">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-warning">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#second-sec">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact Us
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">By Whatsapp</a></li>
+                    <li><a class="dropdown-item" href="#">By Email</a></li>
+                    <li><a href="#" class="dropdown-item">Call Us</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
     <section class="sc1">
         <div class="container-css">
             <div class="itm col-12 col-md-4"><h1 class="t">Lorem, ipsum dolor.</h1>
